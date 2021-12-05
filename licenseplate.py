@@ -2,9 +2,9 @@ import cv2
 import imutils
 import numpy as np
 import pytesseract
-pytesseract.pytesseract.tesseract_cmd = r'/usr/bin/tesseract'
+pytesseract.pytesseract.tesseract_cmd = r'C:\Program Files\Tesseract-OCR\tesseract.exe'
 
-img = cv2.imread('/home/don/workspace/ub/computer_vision/images.jpg', cv2.IMREAD_COLOR)
+img = cv2.imread('images.jpg', cv2.IMREAD_COLOR)
 img = cv2.resize(img, (600, 400))
 
 gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
